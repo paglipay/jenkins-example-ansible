@@ -14,8 +14,8 @@
   - name: Update apt and install docker-ce
     apt: update_cache=yes name=docker-ce state=latest
 
-  - name: "python-pip"
-    apt: pkg=python-pip state=present
+  - name: "python-pip3"
+    apt: pkg=python-pip3 state=present
 
   - name: Install Docker Module for Python
     pip:
@@ -26,8 +26,3 @@
     
   - name: Changing perm of "/usr/local/bin/docker-compose", adding "+x"
     file: dest=/usr/local/bin/docker-compose mode=a+x
-        
-  - name: Copy pptp1 file with owner and permissions
-    copy:
-      src: ~
-      dest: ~
