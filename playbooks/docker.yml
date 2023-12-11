@@ -14,8 +14,8 @@
   - name: Update apt and install docker-ce
     apt: update_cache=yes name=docker-ce state=latest
 
-  - name: "python-pip3"
-    apt: pkg=python-pip3 state=present
+  - name: "python3-pip"
+    apt: pkg=python3-pip state=present
 
   - name: Install Docker Module for Python
     pip:
