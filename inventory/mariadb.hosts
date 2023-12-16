@@ -2,6 +2,5 @@
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [mariadbs]
-mariadb-01 ansible_ssh_host=ec2-54-87-215-255.compute-1.amazonaws.com ansible_ssh_port=22 ansible_user=ubuntu
-mariadb-02 ansible_ssh_host=ec2-54-91-99-181.compute-1.amazonaws.com ansible_ssh_port=22 ansible_user=ubuntu
-mariadb-03 ansible_ssh_host=ec2-3-90-136-91.compute-1.amazonaws.com ansible_ssh_port=22 ansible_user=ubuntu
+mariadb-01 ansible_ssh_host=ip-10-0-0-91.ec2.internal ansible_ssh_port=22 ansible_user=ubuntu
+mariadb-02 ansible_ssh_host=ip-10-0-0-130.ec2.internal ansible_ssh_port=22 ansible_user=ubuntu
