@@ -3,7 +3,7 @@ name: Lamp Deployment
 on:
   push:
     branches:
-      - master
+      - master # Should be 'main', added this so it does not run every push. Does not work right now.
   pull_request:
   workflow_dispatch:
 
