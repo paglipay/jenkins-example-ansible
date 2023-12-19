@@ -9,6 +9,7 @@ pipeline {
       steps {
         // sh 'ansible-galaxy collection install -r requirements.yml'
         // sh 'ansible-playbook -i inventory/mariadb.hosts --private-key=$ANSIBLE_PRIVATE_KEY playbooks/apache.yml'
+        //sh 'ansible all --private-key id_rsa -u vagrant -m authorized_key -a "user=tux state=present key='{{ lookup('file','/home/vagrant/.ssh/id_rsa.pub') }}'"'
         sh 'ansible-playbook -i inventory/mariadb.hosts --private-key=$ANSIBLE_PRIVATE_KEY playbooks/docker.yml'
       }
     }
